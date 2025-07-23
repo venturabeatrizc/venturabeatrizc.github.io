@@ -3,16 +3,171 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Variáveis e condicionais</title>
+        <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
-        <label for="userInput">Insira seu nome</label>
-        <input type="text" id="userInput">
-        <button onclick="armazenarValor ()">Clique no botão!</button>
-        <p id="mostrarMensagem"></p>
+        <nav class="container">
+            <h2 class="logo">Portfolio</h2>
 
+            <ul class="cabecalho">
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
 
-        <script src="scripts.js"></script>
+        <div class="main container" id="main">
+            <div class="introducao">
+                <h4>Olá, meu nome é</h4>
+                <h1>Beatriz</h1>
+                <p>Este é o meu cantinho na internet, onde compartilho um pouco da minha trajetória como designer e desenvolvedora. Aqui você vai conhecer um pouco mais sobre mim, minhas habilidades e os projetos que venho criando com dedicação e criatividade.</p>
+                <a href="https://github.com/venturabeatrizc" target="_blank"><img src="img/linkedin.png" class="rede-social" alt="LinkedIn"></a>
+                <a href="https://github.com/venturabeatrizc" target="_blank"><img src="img/github.png" class="rede-social" alt="GitHub"></a>
+            </div>
+
+            
+            <img src="img/portfolio.png" class="ilustracao-bia" alt="Início">
+        </div>
+
+        <div class="sobre container" id="sobre">
+            <div class="content">
+                <img src="img/sobre-mim.png" alt="Sobre min">
+                <!-- imagem 500x500 -->
+                <div class="texto">
+                    <h5>Sobre mim</h5>
+                    <h2>Do visual ao funcional: criando experiências com código e sensibilidade</h2>
+                    <p>Formada em Design Gráfico e com mais de 3 anos de experiência no desenvolvimento de aplicações web, comecei minha jornada criando projetos visuais e interfaces centradas na experiência do usuário. Com o tempo, fui me aprofundando no desenvolvimento e descobri no código uma forma ainda mais completa de dar vida às ideias. Hoje, uno criatividade e lógica para criar soluções digitais que funcionam bem e têm um bom visual.</p>
+                    <p>Trabalho com HTML, CSS, JavaScript, PHP e WordPress, desenvolvendo sites, interfaces e aplicações com foco em acessibilidade, usabilidade e performance. Meu background em design influencia diretamente minha forma de programar, sempre buscando equilíbrio entre estética e funcionalidade. Cada projeto é uma chance de aprender mais, resolver problemas e construir algo útil de verdade.</p>
+                    <a class="button" href="#contato">Vamos Conversar?</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container habilidades" id="habilidades">
+            <div class="content">
+                <h5>Minhas habilidades</h5>
+                <h2>Linguagens, técnicas e escolhas que dão vida ao meu trabalho</h2>
+                <p>Do HTML ao PHP, trabalho com tecnologias que me permitem construir aplicações robustas e interfaces amigáveis. Sempre busco escrever um código limpo, acessível e alinhado às boas práticas do desenvolvimento web.</p>
+                <a href="#projetos" class="button">Conheça meus projetos</a>
+            </div>
+            <div class="card-grupo">
+                <div class="card">
+                    <img src="img/html.png" class="icone-habilidades" alt="Ícone JavaScript">
+                    <h5>HTML5</h5>
+                    <p>Estrutura semântica e bem organizada para criar páginas claras, acessíveis e otimizadas. A base sólida de todo projeto web que desenvolvo.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/css.png" class="icone-habilidades" alt="Ícone JavaScript">
+                    <h5>CSS3</h5>
+                    <p>Estilo, responsividade e visual refinado com uso de flexbox, grid e animações. Crio interfaces modernas, leves e agradáveis de navegar.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/javascript.png" class="icone-habilidades" alt="Ícone JavaScript">
+                    <h5>JavaScript</h5>
+                    <p>Dá vida à interface com interatividade, lógica e manipulação dinâmica do DOM. Uso para tornar os sites mais inteligentes e envolventes.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/php.png" class="icone-habilidades" alt="Ícone JavaScript">
+                    <h5>PHP</h5>
+                    <p>Linguagem de back-end que me permite criar sites dinâmicos e personalizados. Uso principalmente em projetos com WordPress.</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/design.png" class="icone-habilidades" alt="Ícone JavaScript">
+                    <h5>UX/UI Design</h5>
+                    <p>Design centrado no usuário com foco em clareza, usabilidade e estética. Crio interfaces pensadas para pessoas, não só pixels.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projetos container" id="projetos">
+            <h5>Projetos</h5>
+            <h2>Aplicações, sites e soluções desenvolvidas com propósito e criatividade</h2>
+            <div class="group-projetos">
+                <a href="#" class="projeto">
+                    <img src="img/file.png" class="icone-projetos">
+                    <h6>Site WordPress</h6>
+                    <p>Em breve...</p>
+                </a>
+
+                <a href="#" class="projeto">
+                    <img src="img/file.png" class="icone-projetos">
+                    <h6>Registro de nomes</h6>
+                    <p>Em breve...</p>
+                </a>
+
+                <a href="#" class="projeto">
+                    <img src="img/file.png" class="icone-projetos">
+                    <h6>E-commerce</h6>
+                    <p>Em breve...</p>
+                </a>
+
+                <a href="#" class="projeto">
+                    <img src="img/file.png" class="icone-projetos">
+                    <h6>App de Meteorologia</h6>
+                    <p>Em breve...</p>
+                </a>
+
+                <a href="#" class="projeto">
+                    <img src="img/file.png" class="icone-projetos">
+                    <h6>Estudos</h6>
+                    <p>Em breve... </p>
+                </a>
+            </div>
+        </div>
+
+        <div class="contato container" id="contato">
+            <div class="content">
+                <h2>Entre em contato!</h2>
+                <div class="formulario">
+                    <form action="#" method="POST">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <br><br>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <br><br>
+
+                        <label for="tel">Telefone</label>
+                        <input type="tel" id="tel" name="tel" required>
+
+                        <br><br>
+
+                        <label for="assunto">Assunto</label>
+                        <select name="assunto" id="assunto">
+                            <option value="orcamento">Orçamento</option>
+                            <option value="duvidas">Dúvidas</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
+                        <br><br>
+
+                        <label for="mensagem">Deixe sua mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="4" cols="50" required></textarea>
+
+                        <br><br>
+
+                        <input type="submit" value="Enviar">
+                    </form>
+                    
+                    <div class="redes">
+                        <h4>Redes sociais</h4>
+                        <a href="https://github.com/venturabeatrizc" target="_blank"><img src="img/linkedin.png" class="rede-social" alt="LinkedIn"></a>
+                        <a href="https://github.com/venturabeatrizc" target="_blank"><img src="img/github.png" class="rede-social" alt="GitHub"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
