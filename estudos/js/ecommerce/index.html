@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JQuery</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1><a href="#home">Jardim Secreto</a></h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li><button class="toggle-button-open" id="toggle-button-open">Carrinho<span id="cart-count">0</span></button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="home-section" id="home">
+                <div class="banner">
+                    <h1>Jardim Secreto</h1>
+                    <p>Plantas que combinam com seu estilo de vida e transformam qualquer ambiente em um espaço mais leve, bonito e cheio de vida.</p>
+                    <button><a href="#catalogo">Conheça nosso catálogo</a></button>
+                </div>
+
+            </section>
+
+            <section class="produtosDestaque-section" id="produtosDestaque">
+                <h2>Produtos em destaque</h2>
+                 <div class="swiper featured-swiper">
+                    <div class="swiper-wrapper featured-product-grid">
+                        <!-- Slides serão inseridos via JavaScript -->
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <section class="sobre-section box" id="sobre" data-aos="fade-up">
+                <div class="content">
+                    <img src="img/plants-1.png" alt="">
+                    
+                    <div class="content-text">
+                        <h6>Beleza que encanta</h6>
+                        <h2>Verde que transforma sua casa e sua rotina</h2>
+                        <p>Na nossa loja online, você encontra plantas que vão além da decoração — elas trazem frescor, bem-estar e personalidade para o seu espaço. Com curadoria cuidadosa, variedade de espécies e estilo para todos os gostos, entregamos saúde e beleza natural direto na sua porta. Seja para começar uma coleção ou renovar seu cantinho favorito, aqui a natureza se adapta ao seu ritmo.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalogo-section" id="catalogo">
+                <div class="content">
+                    <div class="content-text">
+                        <h2>Catálogo</h2>
+                        <!-- <ul class="category-list">
+                        </ul> -->
+                    </div>
+                    <div class="product-grid">
+                        <!-- Criação pelo JavaScript -->
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-section" id="contact">
+                <div class="contact">
+                    <h2>Contato</h2>
+                    <p>Fale conosco!</p>
+                    <div class="contact-content">
+                        <form id="contact-form">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email">
+
+                            <label for="message">Mensagem:</label>
+                            <textarea name="message" id="message"></textarea>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+
+                        <div class="contact-info">
+                            <h3>Endereço</h3>
+                            <p>Rua das Lojas, 123 - São Paulo - SP</p>
+                            <h3>Telefone</h3>
+                            <p>(11) 12345-6789</p>
+                            <h3>E-mail</h3>
+                            <p>contato@ecommerce.com.br</p>
+                            <h3>Horário de Atendimento</h3>
+                            <p>Segunda à Sexta, 9h às 18h</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart-section" id="cart-section">
+                <div class="cart-header">
+                    <h2>Carrinho</h2>
+                    <button class="toggle-button-close" id="toggle-button-close">X</button>
+                </div>
+
+                <div class="cart-products">
+                    <!-- Muitos produtos aqui, gerando rolagem -->
+                </div>
+
+                <div class="cart-footer">
+                    <div class="cart-payment">
+                        <p>Total: <span id="total">R$0,00</span></p>
+                        <button id="checkout">Finalizar compra</button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 | E-commerce Jardim Secreto</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+        <script src="scripts/produtos.js"></script>
+        <script src="scripts/carrinho.js"></script>
+        <script src="scripts/slideout.js"></script>
+        <script src="scripts/formulario.js"></script>
+
+        <script>
+            const swiperFeaturedProducts = new Swiper('.featured-swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            breakpoints: {
+                768: {
+                slidesPerView: 2
+                },
+                1020: {
+                slidesPerView: 5
+                }
+            }
+            });
+        </script>
+    </body>
+</html>
